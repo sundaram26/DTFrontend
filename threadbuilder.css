@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.threadbuilder{
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2) inset;
+    /* background-color: red; */
+}
+.thread-heading{
+    width: 100%;
+    padding: 2vw 2vw;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bdbaba9c;
+}
+.main-thread-content{
+    height: 100%;
+    width: 100%;
+}
+.thread-heading i{
+    margin-right: 50px;
+}
+.thread-up{
+    display: none !important;
+    /* visibility: hidden; */
+}
+
+.thread-content{
+    height: 50%;
+    padding: 3vw 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-threads{
+    height: 100%;
+    width: 48%;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sub{
+    background-color: #f0f0f0;
+    height: 70%;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.sub h5{
+    padding: 2vw;
+    font-weight: lighter;
+}
+.sub textarea{
+    height: 70%;
+    width: 100%;
+    padding: 2vw;
+    border: none;
+    border-radius: 20px 20px 16px 16px;
+    color: #979797;
+    resize: none;
+}
+.thread-extra{
+    height: 20%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2vw;
+}
+.thread-extra div{
+    height: 100%;
+    width: 60%;
+    margin-left: 40%;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.thread-extra select{
+    height: 75%;
+    width: 50%;
+    padding: 0.4vw;
+    font-size: smaller;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-thread{
+    height: 12%;
+    padding: 4vw 8vw;
+    display: flex;
+    align-items: center;
+}
+.new-thread button{
+    padding: 2vw;
+    font-size: small;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #0029ff;
+}
+
+.thread-summary{
+    margin: 4vw 8vw;
+}

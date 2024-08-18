@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="threadbuilder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="threadbuilder">
+        <div class="thread-heading">
+            <i class="fa-solid fa-chevron-down thread-up"></i>
+            <i class="fa-solid fa-chevron-up thread-down"></i>
+            <h4>Thread A</h4>
+        </div>
+        <div class="main-thread-content">
+            <div class="thread-content">
+                <div class="sub-threads">
+                    <div class="sub">
+                        <h5>Sub Thread 1</h5>
+                        <textarea>Enter Text Here</textarea>
+                    </div>
+                    <div class="thread-extra">
+                        <div>
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-circle-question"></i>
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-threads">
+                    <div class="sub">
+                        <h5>Sub Interpertation 1</h5>
+                        <textarea>Enter Text Here</textarea>
+                    </div>
+                    <div class="thread-extra">
+                        <select name="Categories">
+                            <option value="Select Categories">Select Categories</option>
+                        </select>
+                        <select name="Select Processes">
+                            <option value="Select Processes">Select Processes</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="new-thread">
+                <button>
+                    <i class="fa-solid fa-plus"></i>
+                    Sub Thread
+                </button>
+            </div>
+            <div class="thread-summary sub">
+                <h5>Summary of Thread A</h5>
+                <textarea>Enter Text Here</textarea>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="threadbuilder.js"></script>
+</body>
+</html>
