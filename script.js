@@ -194,25 +194,40 @@ const journeyContent = document.querySelector('.journey-content')
 const boardHeading = document.querySelector('.board-heading')
 const arrow = document.querySelector('.board-heading i');
 const boardTitle = document.querySelector('.board-heading h4');
-const journeyContentList = document.querySelector('.journey-content ul')
+const journeyContentList = document.querySelector('.journey-board ul')
 const journeyOne = document.querySelector('.journey-one')
 
 arrow.addEventListener('click', ()=>{
-    if(journeyBoard.contains(journeyContent) && boardHeading.contains(boardTitle)){
-        journeyContent.removeChild(journeyContentList);
-        boardHeading.removeChild(boardTitle);
-        arrow.classList.remove('fa-arrow-left');
-        arrow.classList.add('fa-arrow-right');
-        journeyOne.style.display = 'flex';
-        journeyOne.style.marginTop = '1vw'
-        journeyContent.style.display = 'flex';
-        journeyContent.style.justifyContent = 'center';
-    }else{
-        journeyContent.appendChild(journeyContentList);
-        boardHeading.appendChild(boardTitle);
+    if(journeyContentList.style.display === 'none' || !journeyContentList.style.display){
+        journeyContentList.style.display = 'block';
+        journeyOne.style.display = 'none';
+        boardTitle.style.display = 'flex';
         arrow.classList.remove('fa-arrow-right');
         arrow.classList.add('fa-arrow-left');
-        journeyOne.style.display = 'none';
-
+    }else{
+        journeyContentList.style.display = 'none';
+        journeyOne.style.display = 'flex';
+        boardTitle.style.display = 'none';
+        arrow.classList.remove('fa-arrow-left');
+        arrow.classList.add('fa-arrow-right');
     }
 })
+
+
+// arrow.addEventListener('click', ()=>{
+//     if(journeyContentList.style.display === "none" && boardHeading.style.display === "none"){
+//         // journeyContent.removeChild(journeyContentList);
+//         // boardHeading.removeChild(boardTitle);
+//         arrow.classList.remove('fa-arrow-right');
+//         arrow.classList.add('fa-arrow-left');
+//         journeyOne.style.display = 'none';
+//     }else{
+//         // journeyContent.appendChild(journeyContentList);
+//         // boardHeading.appendChild(boardTitle);
+//         arrow.classList.remove('fa-arrow-left');
+//         arrow.classList.add('fa-arrow-right');
+//         journeyOne.style.display = 'none';
+//     }
+// })
+
+

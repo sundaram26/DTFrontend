@@ -62,7 +62,7 @@ html, body{
     background-color: #0029ff;
     border: none;
     border-radius: 8px;
-    font-size: xx-small;
+    font-size: x-small;
     color: #ffffff;
 }
 
@@ -149,6 +149,9 @@ html, body{
     align-items: center;
     justify-content: space-between;
 }
+.board-heading h4{
+    display: none;
+}
 .board-heading i{
     padding: 0.5vw;
     border-radius: 50%;
@@ -157,19 +160,25 @@ html, body{
 }
 .journey-board ul{
     padding: 3vw;
+    display: none;
 }
 .journey-content-heading{
     font-weight: bold;
     margin-bottom: 1vw;
 }
+.journey-content{
+    display: flex;
+    justify-content: center;
+}
 .journey-one{
     height: 3vw;
     width: 3vw;
+    margin-top: 1vw;
     font-size: larger;
     border: 1px solid #0029ff;
     border-radius: 12px;
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     align-items: center;
     justify-content: center;
 }
